@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>yourVac Login</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!--<link rel="icon" type="text/css" href="favicon.ico">-->
+</head>
+
+<body>
+    <div class="container">
+
+        <body bgcolor=white background="img/map-image.png" <div class="box" style="height:600px;background-color:#212529; border:solid #212529; ">
+            <div class="boxlogin">
+                <h1 align="center" style="color:white;">yourVac Login</h1>
+            </div>
+            <div class="isilogin">
+                <form id="login" onsubmit="login()">
+                    <br><input id="user" type="text" placeholder=" Masukkan Username" name="user" required><br>
+                    <input id="pass" type="password" placeholder=" Masukkan Password" name="pass" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+
+
+    </div>
+
+    </div>
+
+    </body>
+
+</html>
+<script type="text/javascript">
+    function login() {
+        var user = document.getElementById('user').value;
+        var pass = document.getElementById('pass').value;
+
+        if (user == 'admin.yourvac@github.com' && pass == 'admin123') {
+            document.getElementById("login").action = "index-registered.html";
+        } else if (user == 'yourvac@github.com' && pass == 'admin123') {
+            document.getElementById("login").action = "index-registered.html";
+        } else if (user == 'yourvacadmin@github.com' && pass == 'admin123') {
+            document.getElementById("login").action = "index-registered.html";
+
+        } else {
+            window.alert("Username atau Password Salah!");
+        }
+    }
+</script>
