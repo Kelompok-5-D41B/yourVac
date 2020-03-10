@@ -24,4 +24,4 @@ dict_web = all
 with open('scrap.json', 'w') as file:
     json.dump(dict_web, file, indent=4)
 
-    '''Helped by Azhar Subhan Fauzi and Mr. Lukmannul Hakim'''
+    
